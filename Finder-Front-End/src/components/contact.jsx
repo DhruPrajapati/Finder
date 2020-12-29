@@ -6,7 +6,7 @@ class Contact extends Component {
     return (
       <section className="contactus " id="contactid">
         <div className="container heading text-center pt-2">
-          <h1 className="text-center font-weigth-bold">CONTACT US</h1>
+          <h1 className="text-center font-weigth-bold">CONTACT</h1>
           <p className="text-capitalize pt-1">
             we're here to help and answer any question you might have. we look
             forward to hearing from you
