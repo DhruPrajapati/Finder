@@ -19,7 +19,6 @@ class Notification extends Component {
   async componentDidMount() {
     try {
       const Response = await notificationGet();
-      console.log(Response.data);
 
       if (Response) {
         let tableData = [];
