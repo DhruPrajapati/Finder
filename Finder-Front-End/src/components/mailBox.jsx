@@ -7,7 +7,7 @@ class MailBox extends Component {
       <section className="newsletter" id="newsletterid">
         <div className="container heading text-center">
           <h1 className="text-center font-weigth-bold text-capitalize">
-            your FeedBack
+            Subcribe to News-letter
           </h1>
         </div>
         <div className="container">

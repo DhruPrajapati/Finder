@@ -61,7 +61,7 @@ class Gallary extends Component {
     const { data, search, SearchResult, Filters } = this.state;
     return (
       // <div className="missing-div">
-      <div className="container pt-5 bg-white ">
+      <div className="container pt-5  ">
         <div className="gallary-head">
           <h1 className="font-weight-bold text-center text-dark ">
             Missing Peoples

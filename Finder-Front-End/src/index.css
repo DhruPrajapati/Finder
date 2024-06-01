@@ -7,6 +7,9 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+body{
+      background-color: #ecf0f1;
+}
 
 i {
   color: #2fccd0;
@@ -102,9 +105,14 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.header-shadow {
+  text-shadow: 2px 5px 8px rgba(0, 0, 0, 0.9);
+}
+
 
 .header-buttons a {
   border: 1px solid #ffffff;
+  
   border-radius: 100px;
   margin: 0 5px;
   padding: 12px 35px;
@@ -143,16 +151,18 @@ p {
 }
 
 .extra-div {
-  background: white;
+  background: #ecf0f1;
   border: medium none;
   padding: 50px !important;
   border-radius: 3px;
   transition: 0.3s;
+  width: 100%;
 }
 
 .extra-div:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   transform: translateY(-20px);
+  z-index: 2;
 }
 
 /* --------------------Features ends ----------------- */
@@ -174,7 +184,7 @@ p {
 }
 
 .box:hover {
-  background: #16c9f6;
+  background: #2fccd0;
 }
 
 .box:hover p {
@@ -249,7 +259,7 @@ p {
   right: 0px;
   left: 0px;
   bottom: 0px;
-  background: linear-gradient(330deg, #16c9f6 55%, #ffffff 0%);
+  background: linear-gradient(330deg, #2fccd0 55%, #ecf0f1 0%);
   z-index: -1;
 }
 
@@ -273,7 +283,7 @@ p {
 
 form:hover .form-button button {
   background: #fff;
-  color: 50d1c0;
+  color: #50d1c0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -287,8 +297,9 @@ form:hover .form-button button {
 
 .newsletter {
   width: 100%;
-  height: auto;
+  height: 30vh;
   margin: 80px auto;
+  margin-bottom: 0px;
 }
 
 .news-letter {
@@ -311,7 +322,7 @@ form:hover .form-button button {
   width: 100%;
   height: auto;
   padding: 120px 0 20px 0;
-  background: #00abff;
+  background: #56d4d6;
   position: relative;
 }
 
@@ -345,7 +356,7 @@ form:hover .form-button button {
   z-index: 99;
   border: none;
   color: #ffffff;
-  background: #00abff;
+  background: #2fccd0;
   padding: 10px;
   border-radius: 10px;
 }
@@ -361,7 +372,7 @@ form:hover .form-button button {
   width: 100%;
   height: 100vh;
 
-  background: linear-gradient(150deg, #2fccd0 50%, #ffffff 0%);
+  background: linear-gradient(150deg, #2fccd0 50%, #ecf0f1 0%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,7 +389,7 @@ form:hover .form-button button {
   padding: 80px 50px;
   background-color: #dfe6e9;
   opacity: 0.9;
-  background: linear-gradient(330deg, #2fccd0 50%, #ffffff 0%);
+  background: linear-gradient(330deg, #2fccd0 50%, #ecf0f1 0%);
   z-index: 1;
 }
 
@@ -602,6 +613,7 @@ tr:hover {
   width: 100%;
   height: 250px;
   text-align: center;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
   transition: 0.3s;
 }
 
@@ -626,7 +638,7 @@ tr:hover {
 }
 
 .dropdown_items :hover {
-  color: #fff !important;
+  color: #ecf0f1!important;
   background: #5bc0de !important;
   /* border-radius: 0px 100px 100px 0px !important; */
   min-width: 130px;

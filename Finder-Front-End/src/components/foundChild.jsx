@@ -119,8 +119,7 @@ class FoundChild extends Form {
             <div className="heading text-center mt-3 mb-0">
               <h1 className="text-center font-weigth-bold text-dark">Found</h1>
               <p className="text-capitalize pt-1 text-dark">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-                distinctio!
+               Please provide the details to help the missing person
               </p>
             </div>
 

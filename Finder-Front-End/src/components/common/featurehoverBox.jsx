@@ -13,7 +13,7 @@ class HoverBox extends Component {
     icon += this.props.icon;
     const { link, route, heading, discription } = this.props;
     return (
-      <div className="extra-div col-lg-6 col-md-6 col-12 ">
+      <div className="extra-div col-lg-6 col-md-6 col-12">
         <Link to={{ pathname: link, state: { takeRoute: route } }}>
           <i className={icon} aria-hidden="true"></i>
         </Link>

@@ -15,7 +15,7 @@ class Features extends Component {
           { route: "/foundlist" },
           {
             discription:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,suscipit quae. Animi reprehenderit minus libero laborum sunt?",
+              "If you've found a missing child, upload their photo here to help us match them with reported missing persons using our facial recognition technology.",
           },
         ],
       },
@@ -28,7 +28,7 @@ class Features extends Component {
           { route: "/MissingReport" },
           {
             discription:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,suscipit quae. Animi reprehenderit minus libero laborum sunt?",
+              "Report a missing person by providing their photo and relevant details to initiate a search using our advanced system.",
           },
         ],
       },
@@ -41,7 +41,7 @@ class Features extends Component {
           { route: "" },
           {
             discription:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,suscipit quae. Animi reprehenderit minus libero laborum sunt?",
+              "Browse through the gallery of missing persons and found individuals. Your observation could help reunite a family.",
           },
         ],
       },
@@ -54,7 +54,7 @@ class Features extends Component {
           { route: "" },
           {
             discription:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,suscipit quae. Animi reprehenderit minus libero laborum sunt?",
+              "Receive real-time notifications and updates about missing persons and potential matches with found individuals.",
           },
         ],
       },
@@ -83,8 +83,8 @@ class Features extends Component {
             This are the following Features
           </p>
         </div>
-        <div className="container">
-          <div className="row">
+        <div className="container ">
+          <div className="row gx-5">
             {this.state.hoverBox.map((hoverbox) => (
               <HoverBox
                 key={hoverbox.id}

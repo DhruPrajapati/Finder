@@ -130,8 +130,7 @@ class MissingReport extends Form {
                 Missing Report
               </h1>
               <p className="text-capitalize pt-1 text-dark">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-                distinctio!
+               Please fill-up the form and provide the details of missing person
               </p>
             </div>
             <div className="d-flex justify-content-center">

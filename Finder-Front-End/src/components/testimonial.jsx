@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import logo from "../images/logo.jpeg";
+import logo from "../images/aryan.jpeg";
 import Dhru from "../images/Dhru.jpg";
+import Vandana from "../images/Vandana.avif";
 import TestimonialBox from "./common/testimonialBox";
 
 class Testimonial extends Component {
@@ -10,11 +11,11 @@ class Testimonial extends Component {
         id: 1,
         value: [
           { img: logo },
-          { name: "Aryan Patel" },
-          { heading: "Web Developer" },
+          { name: "" },
+          { heading: "Aryan Patel" },
           {
             discription:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quo porro labore? Sit aspernatur iure veniam eum.",
+              "Thanks to this incredible website, I found my missing friend within days. The search tools and community support were outstanding.",
           },
         ],
       },
@@ -22,23 +23,23 @@ class Testimonial extends Component {
         id: 2,
         value: [
           { img: Dhru },
-          { name: "Dhru prajapati" },
-          { heading: "FullStack Developer" },
+          { name: "" },
+          { heading: "Dhru Prajapati." },
           {
             discription:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quo porro labore? Sit aspernatur iure veniam eum.",
+              "I reconnected with my lost uncle thanks to this service. facial recognition technology and detailed database made all the difference.",
           },
         ],
       },
       {
         id: 3,
         value: [
-          { img: logo },
-          { name: "Dimple Jadhev" },
-          { heading: "Web Developer" },
+          { img: Vandana },
+          { name: "" },
+          { heading: "Vandana Jain" },
           {
             discription:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quo porro labore? Sit aspernatur iure veniam eum.",
+              "This site reunited me with my sister after two years of searching. The support and resources provided were invaluable.",
           },
         ],
       },
@@ -52,7 +53,7 @@ class Testimonial extends Component {
             Testimonial
           </h1>
           <p className="text-center text-capitalize pt-1">
-            Our Developer Team for Following Project
+            People we helped till now
           </p>
         </div>
         <div className="container">
