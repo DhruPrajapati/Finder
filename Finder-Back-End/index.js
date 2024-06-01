@@ -13,18 +13,21 @@ const app = express();
 const cors = require("cors");
 
 if (!config.get("jwtPrivateKey")) {
-  console.error("FATAL ERROR:jwtPrivateKey is not defined.");
+  console.error("FATAL ERROR: jwtPrivateKey is not defined.");
   process.exit(1);
 }
 
+const db = config.get("database");
+
+mongoose.set("debug", true); // Enable Mongoose debug mode
+
 mongoose
-  .connect("mongodb://localhost/finder", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-  })
+  .connect(db)
   .then(() => console.log("Connected to MongoDB..."))
-  .catch(() => console.error("Could not connect to MongoDB..."));
+  .catch((err) => {
+    console.error("Could not connect to MongoDB...", err);
+    process.exit(1);
+  });
 
 app.use(morgan("dev"));
 app.use(express.static("public"));
