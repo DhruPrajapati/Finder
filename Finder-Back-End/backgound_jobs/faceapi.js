@@ -7,6 +7,7 @@ const mongoose = require("mongoose");
 const _ = require("lodash");
 const fs = require("fs");
 const fetch = require("node-fetch");
+const config = require("config");
 const FoundData = [
   "Image",
   "email",
@@ -42,16 +43,20 @@ const ReportData = [
   "Imagedata",
 ];
 
+
+
 mongoose
-  .connect("mongodb://localhost/finder", {
+  .connect(config.get("database"), {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true,
   })
   .then(() => console.log("Child_Process Connected to MongoDB..."))
-  .catch(() => console.error("Could not connect to MongoDB..."));
+  .catch((error) =>
+    console.error("Child_Process Could not connect to MongoDB...", error)
+  );
 
 process.on("message", async (req) => {
+  console.log("Process received message at:", new Date().toISOString());
   try {
     let jsonResponse;
     if (req.Signal === "Post") {
@@ -62,11 +67,14 @@ process.on("message", async (req) => {
       jsonResponse = await faceApi_PutMethod(req);
     }
     process.send(jsonResponse);
+    console.log("Process finished at:", new Date().toISOString());
     process.exit();
   } catch (error) {
-    console.error(error);
+    console.error("Error in child process:", error);
+    process.exit(1);
   }
 });
+
 
 const { Canvas, Image } = canvas;
 faceapi.env.monkeyPatch({ Canvas, Image });

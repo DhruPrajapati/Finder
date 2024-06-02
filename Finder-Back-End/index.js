@@ -22,12 +22,16 @@ const db = config.get("database");
 mongoose.set("debug", true); // Enable Mongoose debug mode
 
 mongoose
-  .connect(db)
+  .connect(db, {
+    serverSelectionTimeoutMS: 30000, // Increase server selection timeout
+    socketTimeoutMS: 45000, // Increase socket timeout
+  })
   .then(() => console.log("Connected to MongoDB..."))
   .catch((err) => {
     console.error("Could not connect to MongoDB...", err);
     process.exit(1);
   });
+
 
 app.use(morgan("dev"));
 app.use(express.static("public"));
