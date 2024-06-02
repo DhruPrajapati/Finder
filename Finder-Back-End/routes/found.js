@@ -29,6 +29,7 @@ router.get("/:id", auth, async (req, res) => {
 router.post("/", auth, upload.single("Image"), async (req, res) => {
   try {
     req.body.email = decoded.email;
+    console.log(req);
     req.body.Image = req.file.path;
 
     const { error } = validate(req.body);
@@ -43,7 +44,7 @@ router.post("/", auth, upload.single("Image"), async (req, res) => {
       res.status(200).send("Done!!!");
     }
   } catch (ex) {
-    fs.unlinkSync(req.file.path);
+    if (req.file) fs.unlinkSync(req.file.path);
     console.error(ex);
     res.status(500).send("Something failed");
   }
