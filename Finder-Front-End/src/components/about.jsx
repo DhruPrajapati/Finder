@@ -11,7 +11,7 @@ class About extends Component {
               <div>
                 <h3>About Creater</h3>
                 <p className="">
-                  Hi, I am Dhru Prajapati, the creator of this website. Every
+                  Hi, I am Dhru Prajapati, the creater of this website. Every
                   year, countless individuals go missing, leaving families
                   heartbroken and desperate for answers. My vision was to create
                   an app dedicated to social service, leveraging advanced

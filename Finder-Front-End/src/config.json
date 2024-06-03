@@ -1,4 +1,4 @@
 {
-  "apiUrl": "http://localhost:3009/api",
+  "apiUrl": "https://finder-pvov.onrender.com/api",
   "tokenKey": "token"
 }

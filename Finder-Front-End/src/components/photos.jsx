@@ -9,7 +9,7 @@ function Photos({ Data }) {
       <div className="col-sm-12 col-md-6  col-lg-4 pb-5">
         <div className="gallary-img-div ">
           <img
-            src={"data:image/jpeg;base64," + Data.Image}
+            src={Data.Image}
             className=" w-100 h-100 "
             onClick={() => setModalShow(true)}
             alt=""

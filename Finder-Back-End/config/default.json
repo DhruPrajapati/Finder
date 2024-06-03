@@ -1,5 +1,11 @@
 {
   "jwtPrivateKey": "Finder_jwtPrivateKey",
   "SMS_API_Key": "GWeF3Hh2yXPQI1zNUJ9DOMsfkdagSoYxlmL6vR0qZKcTbV4uEjIokNKJ49rbq2xDS6BOdAcWTC18vEXg",
-  "database": "mongodb+srv://dhruprajapati43:os3JbTapz5v8IXFu@finder.ltjy225.mongodb.net/?retryWrites=true&w=majority&appName=Finder"
+  "database": "mongodb+srv://dhruprajapati43:os3JbTapz5v8IXFu@finder.ltjy225.mongodb.net/?retryWrites=true&w=majority&appName=Finder",
+  "cloudinary": {
+    "cloud_name": "dhruprajapati",
+    "api_key": "157496115491748",
+    "api_secret": "HTcH8oV-pcmO170Oce7v5qhXKUU"
+  }
+
 }
